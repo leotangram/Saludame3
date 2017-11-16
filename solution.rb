@@ -1,12 +1,12 @@
 require 'sinatra'
 
 get '/' do
-	erb :"index"
+	erb :index
 end 
 
 post '/views/:name' do
-	name = params[:nick]
-	erb :index
+	@name = params[:nick]
+	erb :hola
 end 
 
 # # get '/' do
