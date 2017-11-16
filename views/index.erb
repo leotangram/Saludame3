@@ -1,7 +1,5 @@
 <h1>Hola dime a quien saludar</h1>
-<form>
-	<input type="text" name="hola">
+<form action="/views" <%= :name %> method="post" %>>
+	<input type="text" name="<%= :nick %>">
 	<input type="submit" name="submit">
 </form>
-
-
