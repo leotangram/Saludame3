@@ -15,13 +15,13 @@ end
 # 	redirect '/hola'
 # end 
 
-# # get '/' do
-# # 	if params[:nombre]
-# # 		name = params[:nombre]
-# # 		"<h1>Hola #{name}!</h1>"
-# # 	else
-# # 		"<h1>Hola #{name = "desconocido"}!"
+get '/' do
+	if params[:nombre]
+		name = params[:nombre]
+		"<h1>Hola #{name}!</h1>"
+	else
+		"<h1>Hola #{name = "desconocido"}!"
 		
-# # 	end
-# # 	redirect '/'
-# # end 
+	end
+	redirect '/'
+end 
